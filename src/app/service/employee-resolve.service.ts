@@ -14,6 +14,7 @@ export class EmployeeResolveService implements Resolve<any> {
 
   constructor(private employeeService:EmployeeService) { }
   resolve(route: ActivatedRouteSnapshot): Observable<any> {
+    debugger
     return this.employeeService.employeelist();
   }
 }

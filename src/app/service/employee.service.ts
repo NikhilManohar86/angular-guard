@@ -12,7 +12,7 @@ export class EmployeeService {
   constructor(private http: HttpClient) { }
   employeelist(){
     return this.http
-    .get<any>(`http://dummy.restapiexample.com/api/v1/employees`,'')
+    .get<any>(`http://dummy.restapiexample.com/api/v1/employees`)
     .pipe(
       map(res => {   
         console.log(res);
