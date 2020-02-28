@@ -15,7 +15,6 @@ export class EmployeeService {
     .get<any>(`http://dummy.restapiexample.com/api/v1/employees`)
     .pipe(
       map(res => {   
-        console.log(res);
         return res;
       })
     );

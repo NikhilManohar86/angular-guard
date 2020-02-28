@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.employeeList = this.route.snapshot.data.employee;
+    this.employeeList = this.route.snapshot.data.employee.data;
     console.log(this.employeeList);
   }
   onsubmit() {

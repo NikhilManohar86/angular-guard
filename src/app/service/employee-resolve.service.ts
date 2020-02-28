@@ -13,8 +13,7 @@ import { Observable, of, EMPTY } from 'rxjs';
 export class EmployeeResolveService implements Resolve<any> {
 
   constructor(private employeeService:EmployeeService) { }
-  resolve(route: ActivatedRouteSnapshot): Observable<any> {
-    debugger
+  resolve(): Observable<any> | Promise<any> | any {
     return this.employeeService.employeelist();
   }
 }
