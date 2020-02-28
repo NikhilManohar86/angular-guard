@@ -9,11 +9,12 @@ import { ActivatedRoute } from '@angular/router';
 export class HomeComponent implements OnInit {
   name: any;
   employeeList;
-  constructor(private route: ActivatedRoute) { }
-
-  ngOnInit() {
+  constructor(private route: ActivatedRoute) { 
     this.employeeList = this.route.snapshot.data.employee.data;
     console.log(this.employeeList);
+  }
+
+  ngOnInit() {
   }
   onsubmit() {
     if (this.name != '')
